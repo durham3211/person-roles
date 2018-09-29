@@ -3,4 +3,4 @@ project(person_roles)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(person_roles Person.h PersonRole.h)
+add_executable(person_roles Person.h PersonRole.h StudentRole.cpp StudentRole.h TeacherRole.cpp TeacherRole.h main.cpp DefaultRole.h)
