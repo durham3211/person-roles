@@ -3,24 +3,30 @@
 //
 #include <iostream>
 #include <string>
-#include <cstdlib>
 
 
 using std::string;
 
-#include "PersonRole.h"
-#include "DefaultRole.h"
+
+
 
 #ifndef PERSON_ROLES_PERSON_H
 #define PERSON_ROLES_PERSON_H
 
-class Person : public PersonRole{
+#include "PersonRole.h"
+#include "DefaultRole.h"
+
+class Person {
 public:
-    explicit Person(string name, PersonRole role = DefaultRole);
+    explicit Person(string name, PersonRole *role = new DefaultRole())
+
+
     virtual string getName(const string &name);
     virtual Person getRole() const;
-    void setRole(const PersonRole & role);
-
+    void setRole(const Person & role);
+    private:
+    string m_name;
+    PersonRole * m_role = new DefaultRole;
 };
 
 

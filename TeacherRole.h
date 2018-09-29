@@ -1,21 +1,22 @@
 //
 // Created by User on 9/28/2018.
 //
-#include <string>
-#include "Person.h"
 
 using std::string;
 
 #ifndef PERSON_ROLES_TEACHERROLE_H
 #define PERSON_ROLES_TEACHERROLE_H
 
+#include <string>
+#include "PersonRole.h"
 
-class TeacherRole : public Person{
+
+class TeacherRole : public PersonRole {
 public:
 
-    string getRoleName() const override;
+    string getRoleName() const;
     string drink();
-    string respondToComplaintFrom(PersonRole p);
+    void respondToComplaintFrom(Person student);
 };
 
 

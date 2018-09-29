@@ -10,19 +10,14 @@ using std::string;
 #ifndef PERSON_ROLES_STUDENTROLE_H
 #define PERSON_ROLES_STUDENTROLE_H
 
-#include "Person.h"
+#include "PersonRole.h"
 
-class StudentRole : public Person {
+class StudentRole : public PersonRole {
 
 public:
 
-    std::string getRoleName() const override;
-    void procrastinate() const;
+    string getRoleName() const;    void procrastinate() const;
     void complainTo(Person Teacher);
-};
-
-class StudentRole {
-
 };
 
 

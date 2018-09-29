@@ -1,8 +1,6 @@
 //
 // Created by User on 9/28/2018.
 //
-#include <iostream>
-
 #include <string>
 #include <iostream>
 
@@ -22,6 +20,6 @@ string TeacherRole::drink() {
 
 }
 
-string TeacherRole::respondToComplaintFrom(Person p) {
+void TeacherRole::respondToComplaintFrom(Person student){
 
 }

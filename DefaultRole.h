@@ -4,14 +4,12 @@
 
 #ifndef PERSON_ROLES_DEFAULTROLE_H
 #define PERSON_ROLES_DEFAULTROLE_H
-#include "Person.h"
+#include "PersonRole.h"
 
 
-class DefaultRole : public Person {};
+class DefaultRole {
 
-
-
+    string getRoleName() const;
 };
-
 
 #endif //PERSON_ROLES_DEFAULTROLE_H
