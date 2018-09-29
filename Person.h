@@ -9,7 +9,6 @@
 using std::string;
 
 #include "PersonRole.h"
-#include <cstdlib>
 #include "DefaultRole.h"
 
 #ifndef PERSON_ROLES_PERSON_H
@@ -17,9 +16,9 @@ using std::string;
 
 class Person : public PersonRole{
 public:
-    explicit Person(std::string name, Person role = DefaultRole{});
-    string getName(const string &name);
-    PersonRole getRole() const =;
+    explicit Person(string name, PersonRole role = DefaultRole);
+    virtual string getName(const string &name);
+    virtual Person getRole() const;
     void setRole(const PersonRole & role);
 
 };

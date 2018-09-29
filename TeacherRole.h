@@ -2,8 +2,7 @@
 // Created by User on 9/28/2018.
 //
 #include <string>
-#include <cstdlib>
-
+#include "Person.h"
 
 using std::string;
 
@@ -11,12 +10,12 @@ using std::string;
 #define PERSON_ROLES_TEACHERROLE_H
 
 
-class TeacherRole {
+class TeacherRole : public Person{
 public:
 
     string getRoleName() const override;
     string drink();
-    string respondToComplaintFrom(Personp);
+    string respondToComplaintFrom(PersonRole p);
 };
 
 

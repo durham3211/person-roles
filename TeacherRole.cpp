@@ -4,7 +4,6 @@
 #include <iostream>
 
 #include <string>
-#include <cstdlib>
 #include <iostream>
 
 using std::cout;
@@ -23,6 +22,6 @@ string TeacherRole::drink() {
 
 }
 
-string TeacherRole::respondToComplaintFrom(Personp) {
+string TeacherRole::respondToComplaintFrom(Person p) {
 
 }
