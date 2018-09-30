@@ -12,14 +12,14 @@ using std::string;
 
 #include "TeacherRole.h"
 
-string TeacherRole::getRoleName() const {
+PersonRole* TeacherRole::getRoleName() {
 
 }
 
 string TeacherRole::drink() {
-
+return "drink drink drink";
 }
 
-void TeacherRole::respondToComplaintFrom(Person student){
+void TeacherRole::respondToComplaintFrom(PersonRole *student){
 
 }

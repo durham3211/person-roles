@@ -7,11 +7,10 @@ using std::string;
 #ifndef PERSON_ROLES_PERSONROLE_H
 #define PERSON_ROLES_PERSONROLE_H
 
-#include "Person.h"
-
 class PersonRole {
 public:
-    string virtual getRoleName() =0;
+    virtual PersonRole* getRoleName() =0;
+    ~PersonRole() = default;
 };
 
 #endif //PERSON_ROLES_PERSONROLE_H

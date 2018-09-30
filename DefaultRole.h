@@ -5,11 +5,12 @@
 #ifndef PERSON_ROLES_DEFAULTROLE_H
 #define PERSON_ROLES_DEFAULTROLE_H
 #include "PersonRole.h"
+#include <string>
 
+class DefaultRole : public PersonRole{
+public:
 
-class DefaultRole {
-
-    string getRoleName() const;
+    PersonRole* getRoleName() override;
 };
 
 #endif //PERSON_ROLES_DEFAULTROLE_H

@@ -14,9 +14,9 @@ using std::string;
 class TeacherRole : public PersonRole {
 public:
 
-    string getRoleName() const;
+    PersonRole* getRoleName();
     string drink();
-    void respondToComplaintFrom(Person student);
+    void respondToComplaintFrom(PersonRole *student);
 };
 
 

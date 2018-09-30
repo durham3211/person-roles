@@ -9,13 +9,13 @@ using std::cin;
 using std::endl;
 
 #include "TeacherRole.h"
-#include "Person.H"
+#include "Person.h"
 #include "PersonRole.h"
 #include "DefaultRole.h"
 #include "StudentRole.h"
 
 int main() {
-    Person Jim("Jim", Person{});
-    Jim.drink();
+    TeacherRole Jim;
+    cout << Jim.drink();
     return 0;
 };

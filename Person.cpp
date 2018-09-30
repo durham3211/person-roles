@@ -4,9 +4,20 @@
 
 #include "Person.h"
 
-Person::Person({string name, PersonRole * role} {
-    m_name = name;
-    m_role = role;
+
+string Person::getName(const string &name) {
+
 }
 
-Person::Person(PersonRole *m_role) : m_role(PersonalRole * m_role);
+string Person::getRole() const {
+
+}
+
+void Person::setRole(const PersonRole &role) {
+
+}
+
+Person::Person(PersonRole *role) {
+
+    m_role = role;
+}

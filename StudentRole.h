@@ -16,8 +16,9 @@ class StudentRole : public PersonRole {
 
 public:
 
-    string getRoleName() const;    void procrastinate() const;
-    void complainTo(Person Teacher);
+    PersonRole* getRoleName() override;
+    void procrastinate() const;
+    void complainTo(PersonRole *teacher);
 };
 
 

@@ -13,7 +13,7 @@ using std::cout;
 using std::endl;
 using std::string;
 
-string StudentRole::getRoleName() const {
+PersonRole* StudentRole::getRoleName() {
 
 }
 
@@ -21,6 +21,6 @@ void StudentRole::procrastinate() const {
 
 }
 
-void StudentRole::complainTo(Person Teacher) {
+void StudentRole::complainTo(PersonRole *teacher) {
 
 }

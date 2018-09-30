@@ -18,15 +18,17 @@ using std::string;
 
 class Person {
 public:
-    explicit Person(string name, PersonRole *role = new DefaultRole())
 
-
-    virtual string getName(const string &name);
-    virtual Person getRole() const;
-    void setRole(const Person & role);
-    private:
     string m_name;
-    PersonRole * m_role = new DefaultRole;
+    PersonRole * m_role;
+
+
+    explicit Person(PersonRole * role = new DefaultRole());
+    string getName(const string &name);
+    string getRole() const;
+    void setRole(const PersonRole & role);
+
+
 };
 
 
